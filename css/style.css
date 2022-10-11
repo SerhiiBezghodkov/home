@@ -48,7 +48,7 @@ footer a {
   font-family: 'Courier New', Courier, monospace;
 }
 aside {
-    width: 60%;
+    width: 50%;
     float: right;
 }
 
@@ -76,4 +76,10 @@ input[type=submit] {
   text-decoration: none;
   margin: 4px 2px;
   cursor: pointer;
+}
+
+
+.container {
+  max-width: 960px;
+  margin: auto;
 }
