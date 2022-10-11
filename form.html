@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/style.css" rel="stylesheet" type="text/css">
+    <title>ЗАПИС НА ТЕСТ ДРАЙВ</title>
+  </head>
+  <body>
+    <h1>Форма запису на тест драйв</h1>
+
+    <form action="data.php" method="GET">
+      <fieldset>
+        <legend>Персональні дані</legend>
+        <label for="fname">Ім'я:</label><br>
+        <input
+          id="fname"
+          name="fname"
+          type="text"
+          placeholder="Ім'я"
+          required
+          minlength="3"
+          maxlength="20">
+        <br>
+        <label for="lname">Прізвище:</label><br>
+        <input
+          id="lname"
+          name="lname"
+          type="text"
+          placeholder="Прізвище"
+          required><br>
+        <label for="age">Вік:</label><br>
+        <input type="number" id="age" name="age" min="0" max="99" required><br>
+        <label>e-mail:</label><br>
+        <input type="email" id="email" name="email" size="30" required><br>
+      </fieldset>
+      <fieldset>
+        <legend>Стать</legend>
+        Чоловік:
+        <input type="radio" name="gender" value="male" checked>
+        Жінка:
+        <input type="radio" name="gender" value="female">
+      </fieldset>
+      
+      <fieldset>
+        <legend>Посвідчення водія</legend>
+        <label>Завантажте посвідчення водія:</label>
+        <input type="file"
+        id="drive_l" name="drive_l"
+        accept="image/png, image/jpeg">
+      </fieldset>
+      <fieldset>
+        <legend>Автомобілі</legend>
+        <label for="auto-select">Виберіть марку авто:</label>
+        <select name="auto" id="auto-select">
+          <option value="">--Будь ласка оберіть авто--</option>
+          <option value="Golf">VW Golf</option>
+          <option value="Tiguan">VW Tiguan</option>
+          <option value="Passat">VW Passat</option>
+          <option value="Amarok">Amarok</option>
+        </select>
+        <br>
+        <br>
+      </fieldset>
+      <fieldset>
+        <legend>Бажана дата:</legend>
+        <label>Дата:</label><br>
+        <input type="date" id="my_date" name="my_date" value="2022-10-01" required><br>
+      </fieldset>
+      <fieldset>
+        <legend>Інша інформація</legend>
+        <textarea name="msg" placeholder="Інша інформація..."></textarea>
+      </fieldset>
+      
+      <hr>
+      <input type="submit" value="Подати">
+    </form>
+  </body>
+</html>

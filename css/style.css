@@ -1,0 +1,79 @@
+body {  
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,600&family=Prosto+One&display=swap');
+
+table,th,td {
+border: 1px solid;
+border-collapse: collapse;
+}
+
+footer {
+  background-color:black;
+  text-align: center;
+  color: #f2f2f2;
+}
+body h1 {
+  font-family: 'Yeseva One', cursive;
+  text-align: center;
+}
+body h2,h3 {
+  font-family: 'Prosto One', cursive;
+}
+
+.topnav {
+    background-color:black;
+    overflow: hidden;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+footer a {
+  color:#ddd;
+  font-family: 'Courier New', Courier, monospace;
+}
+aside {
+    width: 60%;
+    float: right;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+}
+
+legend {
+  background-color:#04AA6D;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
